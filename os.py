@@ -36,7 +36,7 @@ if runprog == 1:
             try:
                 filename = open(path+"\\documents\\"+f'{name}.txt', read)
                 if read == "w":
-                    print("\\n это enter, а stopwrite остановка редактирования и писать что угодно.")
+                    print("\\n это enter, а stopwrite остановка редактирования, писать что угодно.")
                     while True:
                         writef = input()
                         if writef == "stopwrite":
@@ -82,7 +82,7 @@ if runprog == 1:
             print (path)
         
         elif command == "help":
-            print ("помощь по питон os\nmd - создать директорию, mkfile - создать файл, exit - выйти, path - узнать путь к директории, cls - очистить экран, runprog - запустить программу. Всё! Новые команды ждите в обновлении.")
+            print ("помощь по питон os\nmd - создать директорию, mkfile - создать файл, exit - выйти, path - узнать путь к директории, cls - очистить экран, runprog - запустить программу, downfile скачать файл по url. Всё!")
         elif command == "":
             pass
         elif command == "runprog":
