@@ -95,6 +95,16 @@ if runprog == 1:
             else:
                 exec (f"{progname}.main()")
                 os.chdir("..")
+        elif command == "downfile":
+            try:
+                directory = 'documents'
+                url = input("url: ")
+                filename = wget.download(url)
+                os.rename(filename,os.path.join(directory,filename))
+            except ValueError:
+                print ("неверный url")
+            else:
+                print("готово!")
         else:
             print (f"неверная команда {command}")
 elif runprog == 2:
